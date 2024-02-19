@@ -1,4 +1,31 @@
-body{
+body {
     margin: 0;
     padding: 0;
+}
+
+.formForMessages {
+    margin: 20px;
+
+    >form {
+        display: flex;
+        flex-direction: column;
+        width: 450px;
+        gap: 10px;
+
+        >input[type="email"] {
+            width: 150px;
+            height: 30px;
+        }
+
+        >input[type="submit"] {
+            width: 100px;
+            height: 30px;
+        }
+
+        >input[type="textarea"] {
+            height: 100px;
+        }
+    }
+
+
 }
