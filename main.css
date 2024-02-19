@@ -2,3 +2,43 @@ body{
     margin: 0;
     padding: 0;
 }
+.header_container{
+    background: linear-gradient(90deg, hsla(42, 93%, 57%, 1) 0%, hsla(358, 78%, 62%, 1) 100%);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    > .header_logo{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        > img{
+            width: 100%;
+        }
+    }
+    > .header_menu{
+        grid-column-start: 3;
+        grid-column-end: 5;
+        justify-self: center;
+        > ul{
+            > * + * {
+                padding: 10px;
+            }
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            > li{
+                padding: 5px;
+                > a{
+                    padding: 5px;
+                    background-color: orange;
+                    text-decoration: none;
+                    color: black;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}
+.hidden{
+    display: none;
+}
