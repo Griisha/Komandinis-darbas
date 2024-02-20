@@ -189,6 +189,17 @@ footer {
   margin-bottom: 80px;
 }
 
+.maincss{
+ text-align: center;
+  > section > h2 {
+  
+ }
+ >img{
+  height:100%;
+  width: 100%;
+ }
+}
+
 
 @media (min-width: 800px){
   .header_menu{
