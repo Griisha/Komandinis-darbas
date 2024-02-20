@@ -189,6 +189,16 @@ footer {
   margin-bottom: 80px;
 }
 
+
+.maincss{
+ text-align: center;
+   
+ >img{
+  height:100%;
+  width: 100%;
+ }
+}
+
 .maincss{
  text-align: center;
 
