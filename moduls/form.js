@@ -10,4 +10,4 @@ function formSubmit() {
 
 }
 
-export { formSubmit };
+formSubmit();
