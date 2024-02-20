@@ -24,7 +24,28 @@ export default class Card{
         salis.append(salisText)
         const button = document.createElement('i')
         button.setAttribute('class', 'bi bi-info-circle')
+        button.addEventListener("click", () => {
+            const modalas = document.createElement('dialog')
+            const mygtukas = document.createElement('button')
+            modalas.classList.add('modal')
+            mygtukas.setAttribute('class','bi bi-door-closed')
+            const daina = document.createElement('h2')
+            const dainaText = document.createTextNode(`Song: ${this.daina}`)
+            daina.append(dainaText)
+            const paragrafas = document.createElement('p')
+            const paragrafasText = document.createTextNode(this.info)
+            paragrafas.append(paragrafasText)
+            modalas.append(mygtukas,daina,paragrafas)
+            document.querySelector('main').append(modalas)  
+            modalas.showModal()
+            mygtukas.addEventListener('click', ()=>{
+                modalas.remove()
+            })
+        })
+
+
         div.append(papildomas, atlikejas, salis, button)
         return div;
     }
 }
+
