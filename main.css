@@ -189,6 +189,39 @@ footer {
   margin-bottom: 80px;
 }
 
+.maincss{
+ text-align: center;
+
+ >img{
+  height:100%;
+  width: 100%;
+ }
+}
+
+.modal{
+  max-width:800px;
+  background-color: #1d72b3e1;
+  color: white;
+  position: relative;
+  > h2 {
+    font-size:3rem;
+  }
+  > p {
+    font-size:1.5rem;
+  }
+  > button{
+    font-size:2rem;
+    position:absolute;
+    top:15px;
+    right:15px;
+  }
+  > button:hover{
+    cursor: pointer;
+  }
+}
+.modal::backdrop{
+  background-color: rgba(0, 0, 0, 0.618);
+}
 
 @media (min-width: 800px){
   .header_menu{
