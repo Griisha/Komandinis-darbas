@@ -1,8 +1,11 @@
-<<<<<<< HEAD
-body{
-    margin: 0;
-    padding: 0;
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 .header_container{
     background: linear-gradient(90deg, hsla(42, 93%, 57%, 1) 0%, hsla(358, 78%, 62%, 1) 100%);
     display: grid;
@@ -44,29 +47,9 @@ body{
     }
 }
 
-@media (min-width: 800px){
-    .header_menu{
-        > ul{
-            display: flex;
-            > li{
-                > a{
-                    text-wrap: nowrap;
-                }
-            }
-        }
-    }
-}
-=======
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
-body {
-  margin: 0;
-  padding: 0;
-}
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
+
+
+
 footer {
   background-color: rgb(61, 34, 114);
 }
@@ -147,7 +130,18 @@ footer {
   }
 }
 
-@media (max-width: 700px) {
+
+@media (min-width: 800px){
+  .header_menu{
+      > ul{
+          display: flex;
+          > li{
+              > a{
+                  text-wrap: nowrap;
+              }
+          }
+      }
+  }
   .footerNav ul {
     flex-direction: column;
   }
@@ -157,4 +151,3 @@ footer {
     margin: 10px;
   }
 }
->>>>>>> main
