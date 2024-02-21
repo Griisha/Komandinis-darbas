@@ -239,6 +239,8 @@ footer {
           display: flex;
           > li{
               > a{
+                  font-size: 1.7rem;
+                  margin: 5px;
                   text-wrap: nowrap;
               }
           }
