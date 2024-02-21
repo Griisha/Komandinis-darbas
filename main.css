@@ -248,6 +248,8 @@ footer {
 
 .maincss {
   text-align: center;
+  
+
 
   >img {
     height: 100%;
@@ -258,6 +260,23 @@ footer {
 
 .maincss {
   text-align: center;
+
+  >section {
+    margin: 60px;
+  }
+  
+ 
+ > section > h2{
+    font-size: 60px;
+    color: rgb(61, 34, 114);
+  }
+
+  > section  >p{
+    font-size: 30px;
+    color: black;
+    text-align: justify;
+    padding: 0 20px;
+  }
 
   >img {
     height: 100%;
