@@ -197,11 +197,14 @@ footer {
     right: 20px;
     font-size: 1.5rem;
     cursor: pointer;
-    color: rgb(61, 34, 114);
+    color: rgba(255, 255, 255, 0.71);
     font-weight: bold;
   }
-
-  >h2 {
+  > i:hover{
+    color: green;
+    transform: scale(1.8);
+  }
+  > h2 {
     color: rgb(61, 34, 114);
     margin-top: 0;
     margin-bottom: 50px;
@@ -253,21 +256,23 @@ footer {
   max-width: 800px;
   background-color: #1d72b3e1;
   color: white;
-  position: relative;
-
-  >h2 {
-    font-size: 3rem;
+  position: fixed;
+  border-radius: 15px;
+  
+  > h2 {
+    font-size:3rem;
   }
 
   >p {
     font-size: 1.5rem;
   }
-
-  >button {
-    font-size: 2rem;
-    position: absolute;
-    top: 15px;
-    right: 15px;
+  > button{
+    font-size:2rem;
+    position:absolute;
+    top:15px;
+    right:15px;
+    background-color: rgb(241, 80, 80);
+    color: white;
   }
 
   >button:hover {
