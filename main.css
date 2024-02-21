@@ -56,14 +56,17 @@ body {
 footer {
   background-color: rgb(61, 34, 114);
 }
+
 .footerContainer {
   width: 100%;
   padding: 60px 0px 0px;
 }
+
 .socialIcons {
   display: flex;
   justify-content: center;
-  > a {
+
+  >a {
     text-decoration: none;
     padding: 10px;
     background-color: white;
@@ -71,22 +74,27 @@ footer {
     border-radius: 50%;
   }
 }
+
 .socialIcons a i {
   font-size: 20px;
   color: black;
   opacity: 0.9;
 }
+
 .socialIcons a:hover {
   background-color: #111;
   transition: 0.5s;
 }
+
 .socialIcons a:hover i {
   color: white;
   transition: 0.5s;
 }
+
 .footerNav {
   margin: 30px 0;
 }
+
 .footerNav ul {
   display: flex;
   flex-direction: column;
@@ -113,6 +121,7 @@ footer {
   padding: 20px;
   text-align: center;
 }
+
 .footerBottom p {
   color: white;
 }
@@ -120,23 +129,37 @@ footer {
 .formForMessages {
   margin: 20px;
 
-  > form {
+  >h1 {
+    font-size: 60px;
+    color: rgb(61, 34, 114);
+    text-align: center;
+  }
+
+  >form {
     display: flex;
     flex-direction: column;
-    width: 450px;
+    width: 70%;
     gap: 10px;
+    font-size: 20px;
+    color: rgb(61, 34, 114);
+    padding-bottom: 20px;
 
-    > input[type="email"] {
-      width: 150px;
+    >input[type="email"] {
+      width: 200px;
       height: 30px;
     }
 
-    > input[type="submit"] {
-      width: 100px;
-      height: 30px;
+    >input[type="submit"] {
+      width: 130px;
+      height: 50px;
+      background-image: linear-gradient(90deg, hsla(42, 93%, 57%, 1) 0%, hsla(358, 78%, 62%, 1) 100%);
+      color: white;
+      border-radius: 15px;
+      border: 0px;
+      font-size: 20px;
     }
 
-    > input[type="textarea"] {
+    >input[type="textarea"] {
       height: 100px;
     }
   }
@@ -169,21 +192,27 @@ footer {
       width: 100%;
     }
   }
-  > i {
+
+  >i {
     position: absolute;
     bottom: 20px;
     right: 20px;
     font-size: 1.5rem;
     cursor: pointer;
-    color: rgb(61, 34, 114);
+    color: rgba(255, 255, 255, 0.71);
     font-weight: bold;
+  }
+  > i:hover{
+    color: green;
+    transform: scale(1.8);
   }
   > h2 {
     color: rgb(61, 34, 114);
     margin-top: 0;
     margin-bottom: 50px;
   }
-  > h1 {
+
+  >h1 {
     color: rgb(61, 34, 114);
     margin: 10px;
   }
@@ -214,6 +243,8 @@ footer {
 
 .maincss {
   text-align: center;
+.maincss {
+  text-align: center;
 
   > img {
     height: 100%;
@@ -223,20 +254,26 @@ footer {
 
 .modal {
   max-width: 800px;
+.modal {
+  max-width: 800px;
   background-color: #1d72b3e1;
   color: white;
-  position: relative;
+  position: fixed;
+  border-radius: 15px;
+  
   > h2 {
     font-size: 3rem;
   }
   > p {
     font-size: 1.5rem;
   }
-  > button {
-    font-size: 2rem;
-    position: absolute;
-    top: 15px;
-    right: 15px;
+  > button{
+    font-size:2rem;
+    position:absolute;
+    top:15px;
+    right:15px;
+    background-color: rgb(241, 80, 80);
+    color: white;
   }
   > button:hover {
     cursor: pointer;
@@ -248,23 +285,30 @@ footer {
 
 @media (min-width: 800px) {
   .header_menu {
-    > ul {
+    >ul {
       display: flex;
-      > li {
-        > a {
+
+      >li {
+        >a {
+          font-size: 1.7rem;
+          margin: 5px;
           text-wrap: nowrap;
         }
       }
     }
   }
+
   .footerNav ul {
     flex-direction: row;
     justify-content: space-around;
   }
+
   .footerNav ul li {
     width: 100%;
     text-align: center;
-    margin: 0px;
-    text-wrap: nowrap;
+  }
+
+  .formForMessages>form {
+    width: 40%;
   }
 }
