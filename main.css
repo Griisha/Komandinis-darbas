@@ -8,43 +8,39 @@ body {
   background-color: rgba(61, 34, 114, 0.474);
 }
 
-
 .header_container {
-  background: linear-gradient(90deg, hsla(42, 93%, 57%, 1) 0%, hsla(358, 78%, 62%, 1) 100%);
+  background: linear-gradient(
+    90deg,
+    hsla(42, 93%, 57%, 1) 0%,
+    hsla(358, 78%, 62%, 1) 100%
+  );
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-content: center;
   align-items: center;
   font-size-adjust: 0.7;
-
-  >.header_logo {
+  > .header_logo {
     grid-column-start: 1;
     grid-column-end: 3;
-
-    >img {
+    > img {
       width: 100%;
     }
   }
-
-  >.header_menu {
+  > .header_menu {
     grid-column-start: 3;
     grid-column-end: 5;
     justify-self: end;
     padding-right: 20px;
-
-    >ul {
-      >*+* {
+    > ul {
+      > * + * {
         padding: 10px;
       }
-
       list-style: none;
       padding: 0;
       margin: 0;
-
-      >li {
+      > li {
         padding: 5px;
-
-        >a {
+        > a {
           color: firebrick;
           font-weight: bold;
           padding: 5px;
@@ -56,9 +52,6 @@ body {
     }
   }
 }
-
-
-
 
 footer {
   background-color: rgb(61, 34, 114);
@@ -104,10 +97,18 @@ footer {
 
 .footerNav ul {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   list-style: none;
+  padding: 0;
+  > li {
+    padding: 5px 0;
+  }
+  > li:hover {
+    cursor: pointer;
+  }
 }
-
 .footerNav ul li a {
   color: white;
   margin: 20px;
@@ -163,9 +164,12 @@ footer {
     }
   }
 }
-
 .div {
-  background: linear-gradient(90deg, hsla(42, 93%, 57%, 0.8) 0%, hsla(358, 78%, 62%, 0.8) 100%);
+  background: linear-gradient(
+    90deg,
+    hsla(42, 93%, 57%, 0.8) 0%,
+    hsla(358, 78%, 62%, 0.8) 100%
+  );
   position: relative;
   display: flex;
   flex-direction: column;
@@ -176,16 +180,14 @@ footer {
   min-width: 350px;
   overflow: hidden;
   height: 400px;
-
-  >.papildomas {
+  > .papildomas {
     position: relative;
     border-radius: 10px;
     margin-top: 20px;
     width: 90%;
     height: 40%;
     overflow: hidden;
-
-    >img {
+    > img {
       top: 0;
       width: 100%;
     }
@@ -215,16 +217,13 @@ footer {
     margin: 10px;
   }
 }
-
 #main_cards {
   text-align: center;
-
-  >h1 {
+  > h1 {
     color: rgb(61, 34, 114);
     font-size: 4rem;
   }
 }
-
 #main_container {
   display: flex;
   flex-wrap: wrap;
@@ -233,11 +232,10 @@ footer {
   margin-bottom: 80px;
 }
 
-
 .maincss {
   text-align: center;
 
-  >img {
+  > img {
     height: 100%;
     width: 100%;
   }
@@ -245,13 +243,17 @@ footer {
 
 .maincss {
   text-align: center;
+.maincss {
+  text-align: center;
 
-  >img {
+  > img {
     height: 100%;
     width: 100%;
   }
 }
 
+.modal {
+  max-width: 800px;
 .modal {
   max-width: 800px;
   background-color: #1d72b3e1;
@@ -260,10 +262,9 @@ footer {
   border-radius: 15px;
   
   > h2 {
-    font-size:3rem;
+    font-size: 3rem;
   }
-
-  >p {
+  > p {
     font-size: 1.5rem;
   }
   > button{
@@ -274,12 +275,10 @@ footer {
     background-color: rgb(241, 80, 80);
     color: white;
   }
-
-  >button:hover {
+  > button:hover {
     cursor: pointer;
   }
 }
-
 .modal::backdrop {
   background-color: rgba(0, 0, 0, 0.618);
 }
@@ -300,13 +299,13 @@ footer {
   }
 
   .footerNav ul {
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-around;
   }
 
   .footerNav ul li {
     width: 100%;
     text-align: center;
-    /* margin: 10px; */
   }
 
   .formForMessages>form {
