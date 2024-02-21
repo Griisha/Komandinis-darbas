@@ -8,49 +8,50 @@ body {
   background-color: rgba(61, 34, 114, 0.474);
 }
 
-.header_container{
-    background: linear-gradient(90deg, hsla(42, 93%, 57%, 1) 0%, hsla(358, 78%, 62%, 1) 100%);
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    justify-content: center;
-    align-items: center;
-    font-size-adjust: 0.7;
-    > .header_logo{
-        grid-column-start: 1;
-        grid-column-end: 3;
-        > img{
-            width: 100%;
-        }
+.header_container {
+  background: linear-gradient(
+    90deg,
+    hsla(42, 93%, 57%, 1) 0%,
+    hsla(358, 78%, 62%, 1) 100%
+  );
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  font-size-adjust: 0.7;
+  > .header_logo {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    > img {
+      width: 100%;
     }
-    > .header_menu{
-        grid-column-start: 3;
-        grid-column-end: 5;
-        justify-self: end;
-        padding-right: 20px;
-        > ul{
-            > * + * {
-                padding: 10px;
-            }
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            > li{
-                padding: 5px;
-                > a{
-                    color: firebrick;
-                    font-weight: bold;
-                    padding: 5px;
-                    background-color: orange;
-                    text-decoration: none;
-                    border-radius: 5px;
-                }
-            }
+  }
+  > .header_menu {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    justify-self: end;
+    padding-right: 20px;
+    > ul {
+      > * + * {
+        padding: 10px;
+      }
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      > li {
+        padding: 5px;
+        > a {
+          color: firebrick;
+          font-weight: bold;
+          padding: 5px;
+          background-color: orange;
+          text-decoration: none;
+          border-radius: 5px;
         }
+      }
     }
+  }
 }
-
-
-
 
 footer {
   background-color: rgb(61, 34, 114);
@@ -88,8 +89,17 @@ footer {
 }
 .footerNav ul {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   list-style: none;
+  padding: 0;
+  > li {
+    padding: 5px 0;
+  }
+  > li:hover {
+    cursor: pointer;
+  }
 }
 .footerNav ul li a {
   color: white;
@@ -131,8 +141,12 @@ footer {
     }
   }
 }
-.div{
-  background: linear-gradient(90deg, hsla(42, 93%, 57%, 0.8) 0%, hsla(358, 78%, 62%, 0.8) 100%);
+.div {
+  background: linear-gradient(
+    90deg,
+    hsla(42, 93%, 57%, 0.8) 0%,
+    hsla(358, 78%, 62%, 0.8) 100%
+  );
   position: relative;
   display: flex;
   flex-direction: column;
@@ -143,14 +157,14 @@ footer {
   min-width: 350px;
   overflow: hidden;
   height: 400px;
-  > .papildomas{
+  > .papildomas {
     position: relative;
     border-radius: 10px;
     margin-top: 20px;
     width: 90%;
     height: 40%;
     overflow: hidden;
-    > img{
+    > img {
       top: 0;
       width: 100%;
     }
@@ -174,14 +188,14 @@ footer {
     margin: 10px;
   }
 }
-#main_cards{
+#main_cards {
   text-align: center;
-  > h1{
+  > h1 {
     color: rgb(61, 34, 114);
     font-size: 4rem;
   }
 }
-#main_container{
+#main_container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -189,67 +203,68 @@ footer {
   margin-bottom: 80px;
 }
 
+.maincss {
+  text-align: center;
 
-.maincss{
- text-align: center;
-   
- >img{
-  height:100%;
-  width: 100%;
- }
+  > img {
+    height: 100%;
+    width: 100%;
+  }
 }
 
-.maincss{
- text-align: center;
+.maincss {
+  text-align: center;
 
- >img{
-  height:100%;
-  width: 100%;
- }
+  > img {
+    height: 100%;
+    width: 100%;
+  }
 }
 
-.modal{
-  max-width:800px;
+.modal {
+  max-width: 800px;
   background-color: #1d72b3e1;
   color: white;
   position: relative;
   > h2 {
-    font-size:3rem;
+    font-size: 3rem;
   }
   > p {
-    font-size:1.5rem;
+    font-size: 1.5rem;
   }
-  > button{
-    font-size:2rem;
-    position:absolute;
-    top:15px;
-    right:15px;
+  > button {
+    font-size: 2rem;
+    position: absolute;
+    top: 15px;
+    right: 15px;
   }
-  > button:hover{
+  > button:hover {
     cursor: pointer;
   }
 }
-.modal::backdrop{
+.modal::backdrop {
   background-color: rgba(0, 0, 0, 0.618);
 }
 
-@media (min-width: 800px){
-  .header_menu{
-      > ul{
-          display: flex;
-          > li{
-              > a{
-                  text-wrap: nowrap;
-              }
-          }
+@media (min-width: 800px) {
+  .header_menu {
+    > ul {
+      display: flex;
+      > li {
+        > a {
+          text-wrap: nowrap;
+        }
       }
+    }
   }
   .footerNav ul {
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-around;
   }
   .footerNav ul li {
     width: 100%;
     text-align: center;
-    margin: 10px;
+    margin: 0px;
+    text-wrap: nowrap;
   }
 }
