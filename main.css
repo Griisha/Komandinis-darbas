@@ -161,8 +161,12 @@ footer {
     right: 20px;
     font-size: 1.5rem;
     cursor: pointer;
-    color: rgb(61, 34, 114);
+    color: rgba(255, 255, 255, 0.71);
     font-weight: bold;
+  }
+  > i:hover{
+    color: green;
+    transform: scale(1.8);
   }
   > h2 {
     color: rgb(61, 34, 114);
@@ -212,7 +216,9 @@ footer {
   max-width:800px;
   background-color: #1d72b3e1;
   color: white;
-  position: relative;
+  position: fixed;
+  border-radius: 15px;
+  
   > h2 {
     font-size:3rem;
   }
@@ -224,6 +230,8 @@ footer {
     position:absolute;
     top:15px;
     right:15px;
+    background-color: rgb(241, 80, 80);
+    color: white;
   }
   > button:hover{
     cursor: pointer;
@@ -232,6 +240,7 @@ footer {
 .modal::backdrop{
   background-color: rgba(0, 0, 0, 0.618);
 }
+
 
 @media (min-width: 800px){
   .header_menu{
